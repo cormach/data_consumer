@@ -2,8 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 
-# Create a new instance of the Chrome browser - TODO: Add the Chromedriver Address
-
 # Configure Chrome options
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--no-sandbox')  # May be needed depending on your environment
@@ -14,6 +12,5 @@ download_directory = '.'
 # Set the download directory option
 chrome_options.add_argument(f'--download.default_directory={download_directory}')
 driver = webdriver.Chrome(options=chrome_options)
-
 
 driver.quit()
