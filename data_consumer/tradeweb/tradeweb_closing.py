@@ -1,4 +1,4 @@
-url = "YOUR_WEBSITE_URL_HERE"
+url = "https://reports.tradeweb.com/account/login/"
 driver.get(url)
 
 # Locate the username and password fields and enter values
